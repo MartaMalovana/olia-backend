@@ -15,7 +15,7 @@ const sendEmail = (subject, text) => {
   sendSmtpEmail.subject = "НОВЕ ЗАМОВЛЕННЯ";
   sendSmtpEmail.htmlContent = text;
   sendSmtpEmail.sender = { "name": "Matolli Website", "email": "marta.malovana@gmail.com" };
-  sendSmtpEmail.to = [{ "email": "amatusets@gmail.com", "name": "Matusets Hanna" }];
+  sendSmtpEmail.to = [{ "email": "matolli_oil@outlook.com", "name": "Matolli admin" }];
   sendSmtpEmail.headers = { "Order": "1" };
 
   apiInstance.sendTransacEmail(sendSmtpEmail).then(function (data) {
