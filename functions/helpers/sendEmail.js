@@ -23,6 +23,7 @@ const sendEmail = (subject, text) => {
 
   }, function (error) {
     console.error(error);
+    throw new Error(error.message);
   });
 
 };
