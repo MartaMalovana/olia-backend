@@ -5,7 +5,7 @@ const app = express();
 
 app.listen(3001, () => console.log("app is running"));
 
-const allowlist = ['http://www.matolli.com.ua', 'http://matolli.com.ua'];
+const allowlist = ['http://www.matolli.com.ua', 'http://matolli.com.ua', 'https://matolli.com.ua'];
 
 const corsOptionsDelegate = function (req, callback) {
     let corsOptions;
